@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Meditation</string>
+    <string name="meditateText">Meditate</string>
+    <string name="welcome_name">Welcome, </string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="versionNo">Version 1.0</string>
+    <string name="history_for_name">History for  </string>
+    <string name="total_meditations_txt">Total Meditations</string>
+    <string name="date_started_txt">Date Started</string>
+    <string name="streak_txt">Streak</string>
+    <string name="average_length_txt">Average Length</string>
+    <string name="total_time_txt">Total Time</string>
+    <string name="meditations_total_count">0</string>
+    <string name="total_time_count">0</string>
+    <string name="streak_count">0 days</string>
+    <string name="average_length_count">0 minutes</string>
+    <string name="date_started">A DATE</string>
+    <string name="your_history">Your History</string>
+
+    <!-- Saved Preferences-->
+    <string name="name_key">sharedPreferences</string>
+    <string name="meditations_total_key">sharedPreferences</string>
+    <string name="total_time_key">sharedPreferences</string>
+    <string name="streak_key">sharedPreferences</string>
+    <string name="average_length_key">sharedPreferences</string>
+    <string name="date_started_key">sharedPreferences</string>
+    <string name="notifications_key">sharedPreferences</string>
+
+    <!-- Saved Preferences-->
+    <string name = "play_finish_sound">Play finish sound</string>
+
+
+
+</resources>

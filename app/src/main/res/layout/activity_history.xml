@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".HistoryActivity">
+
+    <TextView
+        android:id="@+id/historyWelcome"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/quicksandlight"
+
+        android:text="@string/history_for_name"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="359dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/quicksandregular"
+        android:gravity="center"
+        android:text="x"
+
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/historyWelcome"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/historyWelcome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goBackBtnH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/go_back_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textTotalMeditations"
+        android:textStyle="bold"
+        android:textColor="@color/darkOrange"
+        android:fontFamily="@font/quicksandbold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/total_meditations_txt"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/textDateStarted"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/quicksandbold"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/date_started_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dateStarted"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textAverageLength" />
+
+    <TextView
+        android:id="@+id/textAverageLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/quicksandbold"
+        android:text="@string/average_length_txt"
+
+        android:textColor="@color/darkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/averageLengthCount"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTotalTime" />
+
+    <TextView
+        android:id="@+id/textTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_time_txt"
+        android:fontFamily="@font/quicksandbold"
+
+        android:textColor="@color/calmBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textTotalMeditations" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="3dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="352dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="389dp" />
+
+    <TextView
+        android:id="@+id/meditationsTotalCount"
+        android:layout_width="126dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="@font/quicksandregular"
+
+        android:text="@string/meditations_total_count"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTotalMeditations"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textTotalMeditations"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalTimeCount"
+        android:layout_width="129dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/quicksandregular"
+        android:text="@string/total_time_count"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTotalTime"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textTotalTime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/averageLengthCount"
+        android:layout_width="137dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/quicksandregular"
+
+        android:text="@string/average_length_count"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textAverageLength"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textAverageLength"
+        app:layout_constraintVertical_bias="0.363"
+        tools:text="x minutes" />
+
+    <TextView
+        android:id="@+id/dateStarted"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/quicksandregular"
+
+        android:text="@string/date_started"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textDateStarted"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textDateStarted"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="343dp"
+        android:layout_height="238dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
